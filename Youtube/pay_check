@@ -1,0 +1,23 @@
+class Employees:
+    def __init__(self, name, position):
+        self.name = name 
+        self.position = position
+
+    def paycheck(self):
+        print(f'{self.name}, {self.position}')
+        hours = int(input("how many hours worked?: "))
+        pay = int(input("payrate"))
+        
+        if hours <= 40:
+            payed = hours*pay
+        elif hours > 40:
+            payed = ((hours-40)*pay*1.5)+pay*40
+        print(f'Cash ${payed}')
+        
+
+E1= Employees("Bryan", "analyst")
+
+E2 = Employees("Steffy", "Boss")
+
+print(E1.paycheck())
+print(E2.paycheck())
