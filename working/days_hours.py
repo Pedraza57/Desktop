@@ -18,6 +18,6 @@ def validate_and_execute():
         print("your input is not a valid number. dont ruin the program")
     
 
-
-user_input = input('Hey user, enter a number of days and i will convert it to hours! \n')
-validate_and_execute()
+while True: 
+    user_input = input('Hey user, enter a number of days and i will convert it to hours!\n')
+    validate_and_execute()
