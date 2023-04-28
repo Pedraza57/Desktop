@@ -19,8 +19,8 @@ def validate_and_execute():
     
 user_input = ''
 while user_input != 'exit': 
-    user_input = input('Hey user, enter a number of days and i will convert it to hours!\n')
-    for x in user_input.split(','):
-        validate_and_execute()
+    user_input = input('Hey user, enter number of days as a comma seperated list and i will convert it to hours!\n')
+    for x in set(user_input.split(',')):
+        validate_and_execute() 
 
 
